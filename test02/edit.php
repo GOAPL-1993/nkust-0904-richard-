@@ -27,7 +27,7 @@
         echo "以下是我找到的訊息，請修改！<br>";
         echo "<form method=POST action=update.php>";
         echo "<input type=hidden value=$id name=id>";
-        echo "訊息：<input type=text value=$message name=message size=30>";
+        echo "訊息：<input type=text value='$message' name=message size=30>";
         echo "<input type=submit value=修改>";
         echo "</form>";
         echo "<a href='test02.php'>不修改，直接回去</a>";

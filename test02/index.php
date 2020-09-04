@@ -13,10 +13,10 @@
 </style>
 <title>路透社快訊~~</title>
 </head>
-<body>
-<img src="images/banner-logo.jpg" width=450><br>
+<body>   
+<img src="../images/banner-logo.jpg" width=450><br>
 <hr>
-<?php include "menu.php"; ?>
+<?php include "../includes/menu.php"; ?>
 <hr>
 <?php
 $servername = "localhost";
@@ -83,6 +83,6 @@ if ($result->num_rows > 0) { //檢查記錄的數量，看看是否有資料
 $conn->close();
 ?>
 <hr>
-<?php include "footer.php"; ?>
+<?php include "../includes/footer.php"; ?>
 </body>
 </html>
