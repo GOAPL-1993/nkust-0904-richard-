@@ -12,8 +12,8 @@
 <body>
 <h2>何敏煌0903 PHP練習記錄</h2>
 <hr>
-<?php include "menu.php"; ?>
+<?php include "includes/menu.php"; ?>
 <hr>
-<?php include "footer.php"; ?>
+<?php include "includes/footer.php"; ?>
 </body>
 </html>

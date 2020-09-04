@@ -6,7 +6,7 @@
     $message = $_POST["message"];
 
     if ($id==NULL) { //如果$id是空的，就直接返回
-        header("Location: test02.php");
+        header("Location: index.php");
         exit;
     }
     $servername = "localhost";
@@ -25,6 +25,6 @@
     //以下執行SQL查詢指令，並把結果傳回給$result變數
     $result = $conn->query($sql);
     $conn->close();
-    header("Location: test02.php");
+    header("Location: index.php");
     exit;
 ?>

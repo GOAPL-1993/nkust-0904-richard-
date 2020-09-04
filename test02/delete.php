@@ -4,7 +4,7 @@
     $id = $_GET["id"];
     //如果從網址中（GET協定）找不到id，就直接返回
     if ($id==NULL) {
-        header("Location: test02.php");
+        header("Location: index.php");
         exit;
     }
     $servername = "localhost";
@@ -24,6 +24,6 @@
     $result = $conn->query($sql);
     $conn->close();
     //資料庫操作完畢之後，即轉址回本練習首頁
-    header("Location: test02.php");
+    header("Location: index.php");
     exit;
 ?>

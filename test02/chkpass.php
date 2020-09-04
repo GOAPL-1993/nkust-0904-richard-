@@ -8,6 +8,6 @@
       $_SESSION["user_type"] = 1;
   }
   //密碼檢查完畢之後，就會轉址到首頁去
-  header("Location: test02.php");
+  header("Location: index.php");
   exit;
 ?>

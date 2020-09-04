@@ -4,7 +4,7 @@
     $id = $_GET["id"];
     if ($id==NULL) {
         //如果網址中沒有提供id，就直接返回練習首頁
-        header("Location: test02.php");
+        header("Location: index.php");
         exit;
     }
     $servername = "localhost";
@@ -33,10 +33,10 @@
         echo "訊息：<input type=text value='$message' name=message size=30>";
         echo "<input type=submit value=修改>";
         echo "</form>";
-        echo "<a href='test02.php'>不修改，直接回去</a>";
+        echo "<a href='index.php'>不修改，直接回去</a>";
     } else {
         echo "找不到你要編輯的記錄~~<br>"; // 如果資料表中沒有記錄，要顯示的內容
-        echo "<a href='test02.php'>回上頁</a>";
+        echo "<a href='index.php'>回上頁</a>";
     }
     $conn->close();
 ?>

@@ -21,6 +21,6 @@
     $result = $conn->query($sql);
     $conn->close();
     //資料庫操作完畢之後，隨即轉址回練習首頁
-    header("Location: test02.php");
+    header("Location: index.php");
     exit;
 ?>

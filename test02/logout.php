@@ -4,6 +4,6 @@
     session_start();
     session_destroy();
     //刪除所有Session記錄之後，隨即返回練習首頁
-    header("Location: test02.php");
+    header("Location: index.php");
     exit;
 ?>
