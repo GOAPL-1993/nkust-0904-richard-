@@ -1,6 +1,9 @@
 <?php
+    //此程式是用來顯示出要編輯的記錄，
+    //提供一個表單讓使用者可以編輯
     $id = $_GET["id"];
     if ($id==NULL) {
+        //如果網址中沒有提供id，就直接返回練習首頁
         header("Location: test02.php");
         exit;
     }

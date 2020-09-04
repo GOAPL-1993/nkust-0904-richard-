@@ -1,5 +1,7 @@
 <?php
   session_start();
+  //先從Session中取出user_type
+  //以備後續確認瀏覽者的身份別
   $user_type = $_SESSION["user_type"];
 ?>
 <!DOCTYPE html>
