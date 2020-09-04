@@ -25,36 +25,30 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- 資料表結構 `news`
+-- 資料表結構 `playlist`
 --
 
-CREATE TABLE `news` (
+CREATE TABLE `playlist` (
   `id` int(11) NOT NULL,
-  `message` varchar(100) NOT NULL,
-  `postdate` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP
+  `name` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
--- 傾印資料表的資料 `news`
+-- 傾印資料表的資料 `playlist`
 --
 
-INSERT INTO `news` (`id`, `message`, `postdate`) VALUES
-(3, '高雄今天沒有下雨，好熱喔！', '2020-09-03 15:58:53'),
-(4, '剛剛在路邊遇到鬼...才怪！', '2020-09-03 15:58:53'),
-(10, '今天是星期五了', '2020-09-04 13:45:39'),
-(11, '沒想到，今天也沒有下雨', '2020-09-04 13:45:50'),
-(13, '本週有作業，下週二上課的時候要逐一檢查', '2020-09-04 16:15:16'),
-(14, '作業內容很簡單，完成下一節課沒完成的部份', '2020-09-04 16:15:57'),
-(15, '也就是「播放清單」編輯系統', '2020-09-04 16:16:21');
+INSERT INTO `playlist` (`id`, `name`) VALUES
+(1, '我的直播新聞電視台'),
+(2, '老高有趣的影片');
 
 --
 -- 已傾印資料表的索引
 --
 
 --
--- 資料表索引 `news`
+-- 資料表索引 `playlist`
 --
-ALTER TABLE `news`
+ALTER TABLE `playlist`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -62,10 +56,10 @@ ALTER TABLE `news`
 --
 
 --
--- 使用資料表自動遞增(AUTO_INCREMENT) `news`
+-- 使用資料表自動遞增(AUTO_INCREMENT) `playlist`
 --
-ALTER TABLE `news`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+ALTER TABLE `playlist`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
