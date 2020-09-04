@@ -11,10 +11,10 @@
         font-family:微軟正黑體;
     }
 </style>
-<title>何敏煌0903</title>
+<title>路透社快訊~~</title>
 </head>
 <body>
-<h2>路透社快訊~~</h2>
+<img src="images/banner-logo.jpg" width=450><br>
 <hr>
 <?php include "menu.php"; ?>
 <hr>
